@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/imgs/logo.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <title>NeuroINT</title>
+        
+    </head>
+    <body>
+        <!-- Nav bar -->
+        <nav class="navigation">
+            <div class="logo-container" href="index.html">
+                <img src="assets/imgs/logo.png" alt="NeuroINT logo">
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li> <a href = "services.html">Services</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+                <li><a href = "careers.html">Careers</a></li>
+                <li><a href = "about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- Company photos carousel-->
+        <div class="swiper-container">
+            <!-- Company photos wrapper-->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/imgs/BrainScanSoftware.png" alt="BrainScanSoftware"></div>
+                <div class="swiper-slide"><img src="assets/imgs/AIBrain.png" alt="AIBrain"></div>
+                <div class="swiper-slide"><img src="assets/imgs/QuoteOnMedicalSoftware.png" alt="QuoteOnMedicalSoftware"></div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 NeuroINT. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <!--Scripts-->
+        <!-- Include Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop: true, // Enables continuous loop mode
+                pagination: {
+                    el: '.swiper-pagination', // Container for pagination bullets
+                    clickable: true, // Makes pagination bullets clickable
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next', // Next button element
+                    prevEl: '.swiper-button-prev', // Previous button element
+                },
+            });
+        </script>
+    </body>
+</html>
